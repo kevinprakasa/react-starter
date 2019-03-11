@@ -1,0 +1,13 @@
+import { createSelector } from 'reselect';
+
+// eslint-disable-next-line
+const select{{ properCase name }}Domain = () => (state) => state.get('{{ camelCase name }}');
+
+// eslint-disable-next-line
+const makeSelect{{ properCase name }} = () => createSelector(
+  select{{ properCase name }}Domain(),
+  (substate) => substate.toJS() // eslint-disable-line
+);
+
+export default makeSelect{{ properCase name }};
+export { select{{ properCase name }}Domain };
