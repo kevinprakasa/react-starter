@@ -9,6 +9,12 @@ A starter kit simple react application with stack:
 5. Prettier
 6. Husky pre-commit
 
+# How to use this react starter pack
+
+Just clone this repo, and change your remote origin to your new repo, and voila! You're ready to use it.
+
+------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
