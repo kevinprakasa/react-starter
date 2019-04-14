@@ -37,7 +37,7 @@ module.exports = {
     type: 'confirm',
     name: 'wantActionsAndReducer',
     default: true,
-    message: 'Do you want an actions/constants/selectors/reducer tuple for this container?',
+    message: 'Do you want an actions/constants/reducer tuple for this container?',
   }],
   actions: (data) => {
     // Generate index.js and index.test.js
@@ -74,14 +74,6 @@ module.exports = {
         type: 'add',
         path: '../../src/containers/{{properCase name}}/constants.js',
         templateFile: './container/constants.js.hbs',
-        abortOnFail: true,
-      });
-
-      // Selectors
-      actions.push({
-        type: 'add',
-        path: '../../src/containers/{{properCase name}}/selectors.js',
-        templateFile: './container/selectors.js.hbs',
         abortOnFail: true,
       });
 

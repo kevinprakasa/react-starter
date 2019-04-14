@@ -1,11 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-{{#if wantActionsAndReducer}}
-import { createStructuredSelector } from 'reselect';
 
-import makeSelect{{properCase name}} from './selectors';
-{{/if}}
 {{#if wantStyleJs}}
 import { {{ properCase name }}Container } from './style';
 
@@ -31,9 +27,11 @@ class {{ properCase name }} extends React.{{ type }} {
 };
 
 {{#if wantActionsAndReducer}}
-const mapStateToProps = createStructuredSelector({
-  {{name}}: makeSelect{{properCase name}}(),
-});
+function mapStateToProps(state) {
+  return {
+    
+  };
+}
 {{/if}}
 
 function mapDispatchToProps(dispatch) {
