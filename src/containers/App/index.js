@@ -23,8 +23,7 @@ class App extends React.Component {
       <ThemeProvider theme={theme}>
         <AppContainer>
           <Switch>
-            {/* {pages} */}
-            <h1>LALALA</h1>
+            {pages}
           </Switch>
         </AppContainer>
       </ThemeProvider>
@@ -32,10 +31,9 @@ class App extends React.Component {
   }
 }
 
-// function mapStateToProps(state) {
-//   return {
-//   };
-// }
+function mapStateToProps(state) {
+  return {};
+}
 
 function mapDispatchToProps(dispatch) {
   return {
