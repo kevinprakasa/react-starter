@@ -1,5 +1,13 @@
 # react-starter
-A starter kit simple react application, react+redux+router+thunk
+
+A starter kit simple react application with stack:
+
+1. Redux
+2. Thunk
+3. Axios
+4. Eslint
+5. Prettier
+6. Husky pre-commit
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -69,4 +77,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
