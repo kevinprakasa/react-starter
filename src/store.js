@@ -2,8 +2,8 @@ import { createStore, applyMiddleware } from 'redux';
 import { routerMiddleware } from 'connected-react-router';
 import thunk from 'redux-thunk';
 import createHistory from 'history/createBrowserHistory';
-import createRootReducer from './modules';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import createRootReducer from './modules';
 
 export const history = createHistory({
   basename: process.env.PUBLIC_URL
