@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
@@ -29,9 +28,9 @@ class App extends React.Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {};
-}
+// function mapStateToProps(state) {
+//   return {};
+// }
 
 function mapDispatchToProps(dispatch) {
   return {
