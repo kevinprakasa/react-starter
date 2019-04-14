@@ -1,16 +1,16 @@
 /* eslint-disable */
-import React from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { ThemeProvider } from 'styled-components';
+import React from "react";
+import { Switch, Route, withRouter } from "react-router-dom";
+import { connect } from "react-redux";
+import { ThemeProvider } from "styled-components";
 
-import { theme } from './theme';
-import { routes } from './routes';
-import { AppContainer } from './style';
+import { theme } from "./theme";
+import { routes } from "./routes";
+import { AppContainer } from "./style";
 
 class App extends React.Component {
   render() {
-    console.log()
+    console.log();
     const pages = routes.map(route => (
       <Route
         component={route.component}
@@ -22,9 +22,7 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={theme}>
         <AppContainer>
-          <Switch>
-            {pages}
-          </Switch>
+          <Switch>{pages}</Switch>
         </AppContainer>
       </ThemeProvider>
     );
@@ -41,4 +39,9 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default withRouter(connect(null, mapDispatchToProps)(App));
+export default withRouter(
+  connect(
+    null,
+    mapDispatchToProps
+  )(App)
+);

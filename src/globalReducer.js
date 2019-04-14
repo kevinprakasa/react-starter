@@ -1,6 +1,4 @@
-import { fromJS } from 'immutable';
-
-const initialState = fromJS({})
+const initialState = {};
 
 function globalReducer(state = initialState, action) {
   switch (action.type) {
